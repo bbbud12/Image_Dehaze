@@ -4,16 +4,16 @@ function [ dehaze ] = run_cnn( im )
 
 r0 = 50;
 eps = 10^-3; 
-%将彩色图像转化成灰度图像，消除图像色调和饱和度信息，保留亮度
+%灏嗗僵鑹插浘鍍忚浆鍖栨垚鐏板害鍥惧儚锛屾秷闄ゅ浘鍍忚壊璋冨拰楗卞拰搴︿俊鎭紝淇濈暀浜害
 gray_I = rgb2gray(im);
 
-%加载数据
+%鍔犺浇鏁版嵁
 load dehaze
-%图像预处理，去均值，16*16*3
+%鍥惧儚棰勫鐞嗭紝鍘诲潎鍊硷紝16*16*3
 haze=im-0.5;
 
 %% Feature Extraction F1
-%第一步：提取雾气特征
+%绗竴姝ワ細鎻愬彇闆炬皵鐗瑰緛
 f1=convolution(haze, weights_conv1, biases_conv1);
 F1=[];
 f1temp=reshape(f1,size(f1,1)*size(f1,2),size(f1,3));
