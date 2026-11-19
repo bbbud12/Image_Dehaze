@@ -2,8 +2,7 @@
 % Main.fig Main.m GUI文件
 
 % DehazeNet 的文件:
-% boxfilter.m convConst.cpp convConest.mexw64 convMax.m convloution.m
-% dehaze.mat guidedfilter.m run_cnn.m sse.hpp wrappers.hpp
+% boxfilter.m convConst.cpp convConest.mexw64 convMax.m convloution.m dehaze.mat guidedfilter.m run_cnn.m sse.hpp wrappers.hpp
 
 % MSCNNd 的文件：
 % dehazing_code matlab
@@ -15,17 +14,10 @@
 % Local_1.m
 
 % SSR\MSR\MSRCR 的文件：
-% Retinex_1,m Retinex_2,m Retinex_3,m
+% Retinex_1.m Retinex_2.m Retinex_3.m
 
 % 暗通道 的文件：
 % Antongd_1.m
 
 % 改进的暗通道 的文件：
-% guided_filter.m  get_dark_channel.m  estimate_atmosphere.m
-% estimate_transmission.m
-
-% 评价指标 的文件：
-% compute_image_quality_metrics.m compute_psnr.m compute_rmse.m cal_ssim.m
-
-% 保存、截图 的文件：
-% Snap.m Save.m
+% guided_filter.m  get_dark_channel.m  estimate_atmosphere.m  estimate_transmission.m
